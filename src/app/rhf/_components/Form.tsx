@@ -49,6 +49,7 @@ export function Form() {
         placeholder="First name"
         className="w-full p-3 text-sm border border-black rounded-md bg-transparent"
       />
+      {errors.name?.firstName && <p>{errors.name.firstName.message}</p>}
       <select
         {...register("category")}
         className="w-full p-3 text-sm border border-black rounded-md bg-transparent"
